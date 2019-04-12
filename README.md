@@ -10,8 +10,9 @@ _This is an application provides the user with choices to customize their person
 ## Specs
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| User chooses pizza size | 12" | Price of pizza |
-| User chooses pizza size | 12" | Price of pizza |
+| Program will store user's pizza option input | "User name, pizza size, toppings" | User input of name, pizza size, and toppings |
+| Given the options chosen by the user, program will determine the cost of the pizza order | "12 inch pizza, pepperoni, mushrooms" | "18+3" |
+| After the pizza form is submitted, the program will display user's final order | User clicks submit button | "(Name of user), your total is $21" |
 
 ## Setup/Installation Requirements
 
@@ -29,7 +30,7 @@ _Should any problems occur, discover other bugs, or experience issues with viewi
 
 ## Technologies Used
 
-_This webpage was written in HTML. Style was created using Bootstrap and a custom style page. Effects were implemented using JQuery library and a custom JavaScript page._
+_This program was written in HTML and JavaScript. It was styled using Bootstrap CSS as well as a custom CSS page. 
 
 ### License
 
