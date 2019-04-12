@@ -19,62 +19,53 @@
 
     <p><span class="name"></span>, select a size</p>
     <form id="orderForm">
-      <div id="pizzaSize">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="sizeOne" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
-            Small (12")
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="sizeTwo" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
-            Large (18")
-          </label><br><br>
-        </div>
-      </div>
+      <select class="form-control" id="size">
+        <option></option>
+        <option>Small (12")</option>
+        <option>Large (28")</option>
+        </select>
 
       <p>Then select up to three toppings</p>
       <div id="pizzaTopping">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck1">
-          <label class="form-check-label" for="defaultCheck1">
-            Peperoni
+          <input class="form-check-input" type="checkbox" value="pepperoni" name="topping">
+          <label class="form-check-label" for="pepperoni">
+            Pepperoni
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="friedChicken" name="topping">
+          <label class="form-check-label" for="friedChicken">
             Fried Chicken
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="bacon" name="topping">
+          <label class="form-check-label" for="bacon">
             Bacon
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="mushrooms" name="topping">
+          <label class="form-check-label" for="mushrooms">
             Mushrooms
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="arugula" name="topping">
+          <label class="form-check-label" for="arugula">
             Arugula
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="olives" name="topping">
+          <label class="form-check-label" for="olives">
             Olives
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
+          <input class="form-check-input" type="checkbox" value="green peppers" name="topping">
+          <label class="form-check-label" for="greenPeppers">
             Green Peppers
           </label><br><br>
         </div>
