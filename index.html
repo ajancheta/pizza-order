@@ -9,5 +9,31 @@
   </head>
   <body class="container">
     <h1>Pizza Order</h1>
+
+    <form id="formName">
+      <div class="form-group">
+        <label for="name">Enter Your Name</label>
+        <input type="text"  class="form-control" id="userName"><br>
+        <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br><br>
+    </form>
+
+    <p><span class="name"></span>, select a size</p>
+    <form id="orderForm">
+      <div id="radio-form">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="personal" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            12"
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="work" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            18"
+          </label>
+        </div>
+      </div>
+    </form>
+
   </body>
 </html>

@@ -1,11 +1,11 @@
 # _Pizza Order_
 
-#### _Intro to Programming, Week 3 Independent Project, 04.12.2019_
+#### _Intro to Programming, Week 4 Independent Project, 04.12.2019_
 
 #### By _Ashley J. Ancheta_
 
 ## Description
-_This is an application provides the user with choices to customize their personal pizza. It encompasses fundamental concepts that were learned in last week of objects and prototypes.
+_This is an application provides the user with choices to customize their personal pizza. It encompasses fundamental concepts that were learned in last week of objects and prototypes._
 
 ## Specs
 | Behavior | Input | Output |
@@ -30,7 +30,7 @@ _Should any problems occur, discover other bugs, or experience issues with viewi
 
 ## Technologies Used
 
-_This program was written in HTML and JavaScript. It was styled using Bootstrap CSS as well as a custom CSS page. 
+_This program was written in HTML and JavaScript. It was styled using Bootstrap CSS as well as a custom CSS page._
 
 ### License
 
