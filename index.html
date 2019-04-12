@@ -21,81 +21,27 @@
     <form id="orderForm">
       <select class="form-control" id="size">
         <option></option>
-        <option>Small (12")</option>
-        <option>Large (28")</option>
+        <option value="15">Small (12")</option>
+        <option value="20">Large (18")</option>
         </select>
 
-      <p>Then select up to three toppings</p>
       <div id="pizzaTopping">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="pepperoni" name="topping">
-          <label class="form-check-label" for="pepperoni">
-            Pepperoni
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="friedChicken" name="topping">
-          <label class="form-check-label" for="friedChicken">
-            Fried Chicken
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="bacon" name="topping">
-          <label class="form-check-label" for="bacon">
-            Bacon
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="mushrooms" name="topping">
-          <label class="form-check-label" for="mushrooms">
-            Mushrooms
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="arugula" name="topping">
-          <label class="form-check-label" for="arugula">
-            Arugula
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="olives" name="topping">
-          <label class="form-check-label" for="olives">
-            Olives
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="green peppers" name="topping">
-          <label class="form-check-label" for="greenPeppers">
-            Green Peppers
-          </label><br><br>
-        </div>
+        <p>Then select a combination of toppings</p>
+        <select class="form-control" id="topping">
+          <option></option>
+          <option value="2">Pepperoni and cheese</option>
+          <option value="2">Pepperoni, pepperoncinis, olives</option>
+          <option value="4">Fried chicken, bacon, fresh tomatoes</option>
+          <option value="4">Spinach and mushrooms</option>
+        </select>
+      </div>
 
-        <!-- <p>Lastly, select as many add-ons for free!</p>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="0" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
-            Garlic
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="0" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
-            Balsamic Vinegar
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="0" id="defaultCheck2">
-          <label class="form-check-label" for="defaultCheck2">
-            Ranch
-          </label><br><br>
-        </div>
-      </div> -->
       <button type="submit" name="button" class="btn btn-success">Place order</button>
     </form>
 
     <h1 class="name">Your order:</h1>
-    <span class="size"></span><p>Text Text</p>
-    <span class="topping"></span><p>Text Text</p>
-    <span class="total"></span><p>Text Text</p>
+    <p>Size: <span class="size"></span></p>
+    <p>Topping(s): <span class="topping"></span></p>
+    <p>Total: <span id="total"></span></p>
   </body>
 </html>
