@@ -1,6 +1,7 @@
 body {
   background-color: #000000;
   font-family: 'Rubik', sans-serif;
+  color: #9C9C9C;
 }
 
 .welcome {
@@ -20,9 +21,9 @@ body {
   font-size: 80px;
   font-weight:
   text-align: center;
-  color: #9C9C9C;
   letter-spacing: -5px;
   line-height: 80px;
+  margin-top: 20px;
 }
 
 .welcome p {
@@ -35,31 +36,63 @@ body {
   display: none;
   padding: 5px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 25px;
   background-image: url("https://media.giphy.com/media/bcAXnpZhenJA5McqfL/giphy.gif");
-  background-origin: cover;
-  color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-radius: 50px;
+
 }
 
-#formName {
+.jumbotron h1 {
+  font-size: 90px;
+  letter-spacing: -3px;
+}
+
+#wellOne {
   display: none;
-  text-align: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-#userNameInput {
+#wellOne input {
  width: 15%;
- text-align: center;
 }
-/* .well {
-  background-color: #FFFFFF;
-  padding: 10px;
 
-} */
-
-#orderForm {
+#wellTwo {
   display: none;
+  text-align: left;
+  background-color: #212121;
+  margin-top: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-.result {
+#wellTwo p {
+  font-size: 40px;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+#size {
+  width: 30%;
+}
+
+#topping {
+  width: 50%;
+}
+
+#result {
   display:none;
+  background-color: #212121;
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
+  background-image: url("https://media.giphy.com/media/GLv9aEYfF3cKk/giphy.gif");
 }

@@ -1,4 +1,4 @@
-// Business Interface Logic ---------->
+// Business Interface Logic ------------------------>
 
 // Creating an object to store collected pizza data
 function userOrder (userName, size, topping) {
@@ -19,31 +19,34 @@ userOrder.prototype.addPrice = function() {
 //   }  alert("Please select a topping");
 // }
 
-// User Interface Logic ---------->
+// User Interface Logic ------------------------>
 $(document).ready(function(){
   $(".welcome").click(function(event) {
     event.preventDefault();
-    $("#formName").show();
-    $(".jumbotron").show();
+    $("#wellOne").show();
+    $(".jumbotron").hide();
   });
 
   $("button#nameButton").click(function(event) {
     event.preventDefault();
+    $(".jumbotron").fadeToggle();
+    $(".welcome").hide();
     var nameInput = $("input#userName").val();
-    $(".name").text(nameInput);
     $("#formName").hide();
-    $("#orderForm").fadeToggle();
+    $("#wellTwo").fadeToggle();
+    $(".name").text(nameInput);
 
     });
 
   $("#orderForm").submit(function(event){
     event.preventDefault();
-    var nameInput = $("input#nameInput").val();
+    var nameInput = $("input#userName").val();
     var sizeInput = parseInt($("#size").val());
     var toppingInput = parseInt($("#topping").val());
+
 // Creating a new object using the object constructor above to
     var finalOrder = new userOrder (nameInput, sizeInput, toppingInput);
-    $(".result").fadeToggle();
+    $("#result").fadeToggle();
     var finalTotal = finalOrder.addPrice();
     $(".name").text(nameInput);
     $(".total").text("$" + finalTotal + ".00");

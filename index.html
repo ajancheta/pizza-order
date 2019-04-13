@@ -9,33 +9,32 @@
     <title>Pizza Order</title>
   </head>
   <body class="container">
-<!--
-    <div class="jumbotron">
-      <h1>Doughlicious Pizzeria</h1>
-    </div> -->
 
     <div class="welcome">
-      <h1 align="center">SPECIALIZING IN THE ART OF DOUGH</h1>
+      <h1 align="center">SPECIALIZING IN THE MASTERY OF DOUGH</h1>
       <p>[ click to get started ]</p>
     </div>
 
-    <div class="well" id="wellOne">
+    <div class="well" id="wellOne" align="center">
       <form id="formName">
         <div class="form-group">
-          <!-- <label for="name">Let's get started!</label> -->
-          <input id="userNameInput" type="text"  class="form-control" id="userName" placeholder="Enter Your Name"><br>
+          <input id="userName" type="text"  class="form-control" placeholder="Enter Your Name"><br>
           <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br>
       </form>
     </div>
 
+    <div class="jumbotron">
+      <h1>DOUGHLICIOUS PIZZERIA</h1>
+    </div>
 
+    <div class="well" id="wellTwo">
       <form id="orderForm">
         <p><span class="name"></span>, select a size</p>
         <select class="form-control" id="size">
           <option></option>
           <option value="15">Small (12") $15</option>
           <option value="20">Large (18") $20</option>
-          </select>
+          </select><br>
 
         <p>Then select one combination of toppings:</p>
         <select class="form-control" id="topping">
@@ -47,14 +46,14 @@
         </select><br>
 
 
-        <button type="submit" name="button" class="btn btn-success">Place order</button>
+        <button type="submit" name="button" class="btn btn-primary">Place order</button>
       </form><br>
-
-    <div class="result">
-      <h1><span class="name"></span>, your total is:</h1><br>
-      <h1><span class="total"></span></h1>
-      <!-- <p>Size: <span class="size"></span></p>
-        <p>Topping(s): <span class="topping"></span></p> -->
     </div>
+
+    <div class="well" id="result">
+      <h1>Your total is: <span class="total"></span><br><br>
+        <span class="name"></span>, thank you for your order at Doughlicious Pizzeria! Enjoy and have a nice day!</h1>
+    </div>
+
   </body>
 </html>
