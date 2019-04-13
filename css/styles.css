@@ -1,18 +1,60 @@
 body {
-  background-image: url("../img/pizza.jpeg");
-  background-position: fixed;
+  background-color: #000000;
+  font-family: 'Rubik', sans-serif;
+}
+
+.welcome {
+  text-align: center;
+  background-image: url("https://media.giphy.com/media/bcAXnpZhenJA5McqfL/giphy.gif");
+  background-size: cover;
   background-repeat: no-repeat;
+  padding: 90px;
+  margin-right: 20%;
+  margin-left: 20%;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  margin-top: 10%;
+}
+
+.welcome h1 {
+  font-size: 80px;
+  font-weight:
+  text-align: center;
+  color: #9C9C9C;
+  letter-spacing: -5px;
+  line-height: 80px;
+}
+
+.welcome p {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-top: 50px;
 }
 
 .jumbotron {
-  padding: 1px;
+  display: none;
+  padding: 5px;
   text-align: center;
   margin-top: 15px;
+  background-image: url("https://media.giphy.com/media/bcAXnpZhenJA5McqfL/giphy.gif");
+  background-origin: cover;
+  color: #FFFFFF;
 }
 
-.well {
-  background-color: #FFFFFF;
+#formName {
+  display: none;
+  text-align: center;
 }
+
+#userNameInput {
+ width: 15%;
+ text-align: center;
+}
+/* .well {
+  background-color: #FFFFFF;
+  padding: 10px;
+
+} */
 
 #orderForm {
   display: none;

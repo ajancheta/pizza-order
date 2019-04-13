@@ -5,20 +5,26 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <title>Pizza Order</title>
   </head>
   <body class="container">
-
+<!--
     <div class="jumbotron">
       <h1>Doughlicious Pizzeria</h1>
+    </div> -->
+
+    <div class="welcome">
+      <h1 align="center">SPECIALIZING IN THE ART OF DOUGH</h1>
+      <p>[ click to get started ]</p>
     </div>
 
-    <div class="well">
+    <div class="well" id="wellOne">
       <form id="formName">
         <div class="form-group">
-          <label for="name">Let's get started!</label>
-          <input type="text"  class="form-control" id="userName" placeholder="Enter Your Name"><br>
-          <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br><br>
+          <!-- <label for="name">Let's get started!</label> -->
+          <input id="userNameInput" type="text"  class="form-control" id="userName" placeholder="Enter Your Name"><br>
+          <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br>
       </form>
     </div>
 

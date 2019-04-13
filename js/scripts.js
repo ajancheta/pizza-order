@@ -21,10 +21,17 @@ userOrder.prototype.addPrice = function() {
 
 // User Interface Logic ---------->
 $(document).ready(function(){
+  $(".welcome").click(function(event) {
+    event.preventDefault();
+    $("#formName").show();
+    $(".jumbotron").show();
+  });
+
   $("button#nameButton").click(function(event) {
     event.preventDefault();
     var nameInput = $("input#userName").val();
     $(".name").text(nameInput);
+    $("#formName").hide();
     $("#orderForm").fadeToggle();
 
     });
@@ -34,7 +41,7 @@ $(document).ready(function(){
     var nameInput = $("input#nameInput").val();
     var sizeInput = parseInt($("#size").val());
     var toppingInput = parseInt($("#topping").val());
-Creating a new object using the object constructor above to
+// Creating a new object using the object constructor above to
     var finalOrder = new userOrder (nameInput, sizeInput, toppingInput);
     $(".result").fadeToggle();
     var finalTotal = finalOrder.addPrice();
