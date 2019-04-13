@@ -8,39 +8,47 @@
     <title>Pizza Order</title>
   </head>
   <body class="container">
-    <h1>Pizza Order</h1>
 
-    <form id="formName">
-      <div class="form-group">
-        <label for="name">Let's get started!</label>
-        <input type="text"  class="form-control" id="userName" placeholder="Enter Your Name"><br>
-        <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br><br>
-    </form>
+    <div class="jumbotron">
+      <h1>Doughlicious Pizzeria</h1>
+    </div>
 
-    <p><span class="name"></span>, select a size</p>
-    <form id="orderForm">
-      <select class="form-control" id="size">
-        <option></option>
-        <option value="15">Small (12") $15</option>
-        <option value="20">Large (18") $20</option>
-        </select>
-
-      <p>Then select one combination of toppings:</p>
-      <select class="form-control" id="topping">
-        <option></option>
-        <option value="2">Pepperoni and cheese $2.00</option>
-        <option value="3">Pepperoni, pepperoncinis, olives $3.00</option>
-        <option value="4">Fried chicken, bacon, fresh tomatoes $4.00</option>
-        <option value="2">Spinach and mushrooms $2.00</option>
-      </select>
+    <div class="well">
+      <form id="formName">
+        <div class="form-group">
+          <label for="name">Let's get started!</label>
+          <input type="text"  class="form-control" id="userName" placeholder="Enter Your Name"><br>
+          <button type="button" class="btn-primary" id="nameButton" name="personal-button" value="personal">Add Name</button><br><br>
+      </form>
+    </div>
 
 
-      <button type="submit" name="button" class="btn btn-success">Place order</button>
-    </form>
+      <form id="orderForm">
+        <p><span class="name"></span>, select a size</p>
+        <select class="form-control" id="size">
+          <option></option>
+          <option value="15">Small (12") $15</option>
+          <option value="20">Large (18") $20</option>
+          </select>
 
-    <h1 class="name">Your order:</h1>
-    <!-- <p>Size: <span class="size"></span></p>
-    <p>Topping(s): <span class="topping"></span></p> -->
-    <p>Total: <span class="total"></span></p>
+        <p>Then select one combination of toppings:</p>
+        <select class="form-control" id="topping">
+          <option></option>
+          <option value="2">Pepperoni and mozzarella cheese $2.00</option>
+          <option value="3">Pepperoni, mozzarella cheese, pepperoncinis, olives $3.00</option>
+          <option value="4">Fried chicken, mozzarella, bacon and fresh red peppers $4.00</option>
+          <option value="2">Spinach, goat cheese, balsamic vinegar and mushrooms $2.00</option>
+        </select><br>
+
+
+        <button type="submit" name="button" class="btn btn-success">Place order</button>
+      </form><br>
+
+    <div class="result">
+      <h1><span class="name"></span>, your total is:</h1><br>
+      <h1><span class="total"></span></h1>
+      <!-- <p>Size: <span class="size"></span></p>
+        <p>Topping(s): <span class="topping"></span></p> -->
+    </div>
   </body>
 </html>

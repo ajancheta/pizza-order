@@ -9,26 +9,15 @@ function userOrder (userName, size, topping) {
 
 // Creating a prototype to add up collected data from the user and add total cost of user prefered size and topping
 userOrder.prototype.addPrice = function() {
-  this.total = this.size + this.topping;
+  this.total = (parseInt(this.size)) + (parseInt(this.topping));
   return this.total;
 };
 
-// Broken function
-// userOrder.prototype.addPrice = function() {
-//   var price = 0;
-//   var topping = [];
-//     for (i=0; i < pizzas.topping[0].length; i++) {
-//       if (price >= 20) {
-//         price += 2;
-//       } if (price >= 18) {
-//         price += 1;
-//       }
-//     }
 //
-//   return price;
-//
-// };
-
+// userOrder.prototype.selectTwoOptions = function() {
+//   if (this.total <=15) {
+//   }  alert("Please select a topping");
+// }
 
 // User Interface Logic ---------->
 $(document).ready(function(){
@@ -36,6 +25,7 @@ $(document).ready(function(){
     event.preventDefault();
     var nameInput = $("input#userName").val();
     $(".name").text(nameInput);
+    $("#orderForm").fadeToggle();
 
     });
 
@@ -44,7 +34,9 @@ $(document).ready(function(){
     var nameInput = $("input#nameInput").val();
     var sizeInput = parseInt($("#size").val());
     var toppingInput = parseInt($("#topping").val());
+Creating a new object using the object constructor above to
     var finalOrder = new userOrder (nameInput, sizeInput, toppingInput);
+    $(".result").fadeToggle();
     var finalTotal = finalOrder.addPrice();
     $(".name").text(nameInput);
     $(".total").text("$" + finalTotal + ".00");

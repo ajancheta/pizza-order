@@ -1,0 +1,23 @@
+body {
+  background-image: url("../img/pizza.jpeg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  padding: 1px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.well {
+  background-color: #FFFFFF;
+}
+
+#orderForm {
+  display: none;
+}
+
+.result {
+  display:none;
+}
