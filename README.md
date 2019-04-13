@@ -5,14 +5,14 @@
 #### By _Ashley J. Ancheta_
 
 ## Description
-_This is an application provides the user with choices to customize their personal pizza. It encompasses fundamental concepts that were learned in last week of objects and prototypes._
+_This application provides the user to order a pizza and calculates the total cost. It encompasses fundamental concepts of objects and prototypes that were learned in last week._
 
 ## Specs
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
 | Program will store user's pizza option input | "User name, pizza size, toppings" | User input of name, pizza size, and toppings |
 | Given the options chosen by the user, program will determine the cost of the pizza order | "12 inch pizza, pepperoni, mushrooms" | "18+3" |
-| After the pizza form is submitted, the program will display user's final order | User clicks submit button | "(Name of user), your total is $21" |
+| After the pizza form is submitted, the program will display the cost of user's final order | User clicks submit button | "Your total is $22" |
 
 ## Setup/Installation Requirements
 
@@ -22,7 +22,7 @@ _This is an application provides the user with choices to customize their person
 
 ## Known Bugs
 
-_There are no known bugs._
+_There are no known bugs but this webpage is best viewed on a full screen._
 
 ## Support and contact details
 

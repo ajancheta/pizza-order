@@ -7,23 +7,30 @@ function userOrder (userName, size, topping) {
   this.topping = topping
 }
 
-// Creating a prototype to add up collected data from the user and add total cost of user prefered size and topping
+// Creating a prototype to add total cost depending on the user inputted data
 userOrder.prototype.addPrice = function() {
   this.total = (parseInt(this.size)) + (parseInt(this.topping));
   return this.total;
 };
 
-//
-// userOrder.prototype.selectTwoOptions = function() {
-//   if (this.total <=15) {
-//   }  alert("Please select a topping");
-// }
+
+// Key up and key down effects
+function textEffects() {
+  $("input").keydown(function(){
+  $("input").css("background-color", "pink");
+  $("input").css("color", "#42f4e5");
+});
+$("input").keyup(function(){
+  $("input").css("color", "hotpink");
+});
+}
 
 // User Interface Logic ------------------------>
 $(document).ready(function(){
   $(".welcome").click(function(event) {
     event.preventDefault();
     $("#wellOne").show();
+    textEffects();
     $(".jumbotron").hide();
   });
 
