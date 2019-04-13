@@ -21,27 +21,26 @@
     <form id="orderForm">
       <select class="form-control" id="size">
         <option></option>
-        <option value="15">Small (12")</option>
-        <option value="20">Large (18")</option>
+        <option value="15">Small (12") $15</option>
+        <option value="20">Large (18") $20</option>
         </select>
 
-      <div id="pizzaTopping">
-        <p>Then select a combination of toppings</p>
-        <select class="form-control" id="topping">
-          <option></option>
-          <option value="2">Pepperoni and cheese</option>
-          <option value="2">Pepperoni, pepperoncinis, olives</option>
-          <option value="4">Fried chicken, bacon, fresh tomatoes</option>
-          <option value="4">Spinach and mushrooms</option>
-        </select>
-      </div>
+      <p>Then select one combination of toppings:</p>
+      <select class="form-control" id="topping">
+        <option></option>
+        <option value="2">Pepperoni and cheese $2.00</option>
+        <option value="3">Pepperoni, pepperoncinis, olives $3.00</option>
+        <option value="4">Fried chicken, bacon, fresh tomatoes $4.00</option>
+        <option value="2">Spinach and mushrooms $2.00</option>
+      </select>
+
 
       <button type="submit" name="button" class="btn btn-success">Place order</button>
     </form>
 
     <h1 class="name">Your order:</h1>
-    <p>Size: <span class="size"></span></p>
-    <p>Topping(s): <span class="topping"></span></p>
-    <p>Total: <span id="total"></span></p>
+    <!-- <p>Size: <span class="size"></span></p>
+    <p>Topping(s): <span class="topping"></span></p> -->
+    <p>Total: <span class="total"></span></p>
   </body>
 </html>

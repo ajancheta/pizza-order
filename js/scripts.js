@@ -1,17 +1,16 @@
 // Business Interface Logic ---------->
 
-// Creating an object to store collected pizza info
+// Creating an object to store collected pizza data
 function userOrder (userName, size, topping) {
   this.userName = userName,
   this.size = size,
   this.topping = topping
-};
+}
 
-// Creating a prototype to add up collected data from the user and add total cost
-
+// Creating a prototype to add up collected data from the user and add total cost of user prefered size and topping
 userOrder.prototype.addPrice = function() {
-  var total = this.size + this.topping;
-  this.total = total;
+  this.total = this.size + this.topping;
+  return this.total;
 };
 
 // Broken function
@@ -40,17 +39,14 @@ $(document).ready(function(){
 
     });
 
-// Submitting the order form
   $("#orderForm").submit(function(event){
     event.preventDefault();
     var nameInput = $("input#nameInput").val();
     var sizeInput = parseInt($("#size").val());
     var toppingInput = parseInt($("#topping").val());
-    var finalOrder = userOrder.addPrice();
-    $(".total").text("$" + finalOrder);
+    var finalOrder = new userOrder (nameInput, sizeInput, toppingInput);
+    var finalTotal = finalOrder.addPrice();
     $(".name").text(nameInput);
-    $(".size").text(sizeInput);
-    $(".topping").text(toppingInput);
+    $(".total").text("$" + finalTotal + ".00");
   });
 });
-// });
