@@ -1,27 +1,42 @@
 // Business Interface Logic ------------------------>
 
 // Creating an object to store collected pizza data
-function userOrder (userName, size, topping) {
-  this.userName = userName,
+function Order (size, topping) {
   this.size = size,
-  this.topping = topping
+  this.topping = topping,
+  this.cost = 0,
+  // this.sizeCost = 0,
+  this.toppingCost = 4
 }
 
-// Creating a prototype to add total cost depending on the user inputted data
-userOrder.prototype.addPrice = function() {
-  this.total = (parseInt(this.size)) + (parseInt(this.topping));
-  return this.total;
-};
+function add(size, topping) {
+  return size + topping;
+}
+
+// Creating a function to add up total of user's selected topping data
+Order.prototype.toppingTotal = function() {
+  this.toppingCost += this.topping.length;
+}
+
+// Creating a function to add the size and topping input
+Order.prototype.totalCost = function() {
+  this.cost += add(this.size, this.toppingCost);
+}
+
+// Create a funciton to return the total cost
+Order.prototype.printOrder = function() {
+  return this.cost;
+}
 
 
-// Key up and key down effects
+// Key up and key down effects for the first form input
 function textEffects() {
   $("input").keydown(function(){
-  $("input").css("background-color", "pink");
+  $("input").css("background-color", "#FF94FF");
   $("input").css("color", "#42f4e5");
 });
 $("input").keyup(function(){
-  $("input").css("color", "hotpink");
+  $("input").css("color", "#984FEA");
 });
 }
 
@@ -32,6 +47,7 @@ $(document).ready(function(){
     $("#wellOne").show();
     textEffects();
     $(".jumbotron").hide();
+
   });
 
   $("button#nameButton").click(function(event) {
@@ -49,13 +65,19 @@ $(document).ready(function(){
     event.preventDefault();
     var nameInput = $("input#userName").val();
     var sizeInput = parseInt($("#size").val());
-    var toppingInput = parseInt($("#topping").val());
+    var toppingInput = [];
+    $("input:checkbox[name=topping]:checked").map(function(){
+      toppingInput.push($(this).val());
 
-// Creating a new object using the object constructor above to
-    var finalOrder = new userOrder (nameInput, sizeInput, toppingInput);
+    });
+
+    var finalOrder = new Order (sizeInput, toppingInput);
+    finalOrder.toppingTotal();
+    finalOrder.totalCost();
+    finalOrder.printOrder();
+    var finalTotal = finalOrder.printOrder();
+    console.log("test");
     $("#result").fadeToggle();
-    var finalTotal = finalOrder.addPrice();
-    $(".name").text(nameInput);
     $(".total").text("$" + finalTotal + ".00");
   });
 });

@@ -36,15 +36,17 @@
           <option value="20">Large (18") $20</option>
           </select><br>
 
-        <p>Then select one combination of toppings:</p>
-        <select class="form-control" id="topping">
-          <option></option>
-          <option value="2">Pepperoni and mozzarella cheese $2.00</option>
-          <option value="3">Pepperoni, mozzarella cheese, pepperoncinis, olives $3.00</option>
-          <option value="4">Fried chicken, mozzarella, bacon and fresh red peppers $4.00</option>
-          <option value="2">Spinach, goat cheese, balsamic vinegar and mushrooms $2.00</option>
-        </select><br>
-
+        <p>Then select as many toppings for $4 extra:</p>
+        <div class="form-check" name="topping">
+          <input type="checkbox" value="Pepperoni">Pepperoni
+          <br><input type="checkbox" value="Bacon">Bacon
+          <br><input type="checkbox" value="Fried Chicken">Fried Chicken
+          <br><input type="checkbox" value="Mushrooms">Mushrooms
+          <br><input type="checkbox" value="Olives">Olives
+          <br><input type="checkbox" value="Arugula">Arugula
+          <br><input type="checkbox" value="Balsamic Vinegar">Balsamic Vinegar
+          <br><input type="checkbox" value="Ranch">Ranch
+        </div>
 
         <button type="submit" name="button" class="btn btn-primary">Place order</button>
       </form><br>
