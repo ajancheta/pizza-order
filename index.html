@@ -29,7 +29,7 @@
 
     <div class="well" id="wellTwo">
       <form id="orderForm">
-        <p><span class="name"></span>, select a size</p>
+        <p><span class="name"></span>, select a size:</p>
         <select class="form-control" id="size">
           <option></option>
           <option value="15">Small (12") $15</option>
@@ -38,15 +38,31 @@
 
         <p>Then select as many toppings for $4 extra:</p>
         <div class="form-check" name="topping">
-          <input type="checkbox" value="Pepperoni">Pepperoni
-          <br><input type="checkbox" value="Bacon">Bacon
-          <br><input type="checkbox" value="Fried Chicken">Fried Chicken
-          <br><input type="checkbox" value="Mushrooms">Mushrooms
-          <br><input type="checkbox" value="Olives">Olives
-          <br><input type="checkbox" value="Arugula">Arugula
-          <br><input type="checkbox" value="Balsamic Vinegar">Balsamic Vinegar
-          <br><input type="checkbox" value="Ranch">Ranch
-        </div>
+          <input class="form-check-input" type="checkbox" value="Pepperoni" id="choiceOne">
+          <label class="form-check-label" for="choiceOne">
+            Pepperoni<br>
+          <input class="form-check-input" type="checkbox" value="Bacon" id="choiceTwo">
+          <label class="form-check-label" for="choiceTwo">
+            Bacon<br>
+          <input class="form-check-input" type="checkbox" value="Fried Chicken" id="choiceThree">
+          <label class="form-check-label" for="choiceThree">
+            Fried Chicken<br>
+          <input class="form-check-input" type="checkbox" value="Mushrooms" id="choiceFour">
+          <label class="form-check-label" for="choiceFour">
+            Mushrooms<br>
+          <input class="form-check-input" type="checkbox" value="Olives" id="choiceFive">
+          <label class="form-check-label" for="choiceFive">
+            Olives<br>
+          <input class="form-check-input" type="checkbox" value="Arugula" id="choiceSix">
+          <label class="form-check-label" for="choiceSix">
+            Arugula<br>
+          <input class="form-check-input" type="checkbox" value="Balsamic Vinegar" id="choiceSeven">
+          <label class="form-check-label" for="choiceSeven">
+            Balsamic Vinegar<br>
+          <input class="form-check-input"type="checkbox" value="Ranch" id="choiceEight">
+          <label class="form-check-label" for="choiceEight">
+            Ranch
+        </div><br>
 
         <button type="submit" name="button" class="btn btn-primary">Place order</button>
       </form><br>
