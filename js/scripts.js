@@ -5,7 +5,6 @@ function Order (size, topping) {
   this.size = size,
   this.topping = topping,
   this.cost = 0,
-  // this.sizeCost = 0,
   this.toppingCost = 4
 }
 
@@ -23,7 +22,7 @@ Order.prototype.totalCost = function() {
   this.cost += add(this.size, this.toppingCost);
 }
 
-// Create a funciton to return the total cost
+// Create a funciton to print out the total cost
 Order.prototype.printOrder = function() {
   return this.cost;
 }
@@ -76,7 +75,6 @@ $(document).ready(function(){
     finalOrder.totalCost();
     finalOrder.printOrder();
     var finalTotal = finalOrder.printOrder();
-    console.log("test");
     $("#result").fadeToggle();
     $(".total").text("$" + finalTotal + ".00");
   });
